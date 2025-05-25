@@ -1,3 +1,10 @@
+# WHATS IT  CURES?
+
+This script cures digital amnesia — it helps lost private keys find their long-lost Bitcoin cousins!
+
+---
+
+
 ## Table of Contents
 
 1. [Introduction](#introduction)
@@ -35,9 +42,9 @@
 
 ---
 
-## Introduction  <a name="introduction"></a>
+## Introduction 
 
-### SHAtheCureV2  <a name="shathecurev2"></a>
+### SHAtheCureV2 
 
 **Version:** V2
 **Repository:** [shathecurev2](https://github.com/Shubsaini08/shathecure)
@@ -61,7 +68,8 @@ Unlike single-shot hashing, illtrusive hashing encourages continuous state evolu
 
 ---
 
-## Examples  <a name="examples"></a>
+## Examples  
+
 
 ```mermaid
 graph LR
@@ -86,7 +94,7 @@ I --> J[P2PKH/P2SH Encoding]
 
 ---
 
-### SHA.cpp  <a name="sha-cpp"></a>
+### SHA.cpp  
 
 This executable provides two modes of continuous hashing without address generation:
 
@@ -124,7 +132,7 @@ Option 2: Alternate SHA-512 and SHA-256 endlessly
 
 ---
 
-### SHAv2.cpp  <a name="shav2cpp"></a>
+### SHAv2.cpp  
 
 Extends SHA.cpp by deriving Bitcoin addresses for each hash iteration.
 
@@ -162,7 +170,7 @@ Usage: ./shav2 <option 1|2> <input_string>
 
 ---
 
-### SHAv3.cpp  <a name="shav3cpp"></a>
+### SHAv3.cpp  
 
 SHAv3 combines advanced logging, dual newline-handling paths, and automatic checkpointing to facilitate long-running entropy exploration.
 
@@ -217,7 +225,7 @@ SHAv3 combines advanced logging, dual newline-handling paths, and automatic chec
 
 ---
 
-## How to Use to Find Things  <a name="how-to-use-to-find-things"></a>
+## How to Use to Find Things  
 
 This section details the practical steps to deploy these tools for key/address pattern discovery:
 
@@ -247,7 +255,7 @@ This section details the practical steps to deploy these tools for key/address p
 
 ---
 
-## SHA Variant 1 - SHAV1  <a name="shav1"></a>
+## SHA Variant 1 - SHAV1  
 
 SHAV1 is the foundational C++ utility leveraging OpenSSL for infinite hash loops:
 
@@ -260,7 +268,7 @@ SHAV1 is the foundational C++ utility leveraging OpenSSL for infinite hash loops
 
 ---
 
-## SHA Variant 2 - SHAV2  <a name="shav2"></a>
+## SHA Variant 2 - SHAV2  
 
 Building on SHAV1, SHAV2 integrates libsecp256k1 to treat each hash as a private key:
 
@@ -289,7 +297,7 @@ Performance: Achieves up to \~118 kH/s on a modern desktop CPU with optimized Op
 
 ---
 
-## SHA Variant 3 - SHAV3  <a name="shav3"></a>
+## SHA Variant 3 - SHAV3  
 
 SHAV3 enhances resilience and traceability:
 
@@ -402,7 +410,7 @@ For every loop iteration, SHAV3 generates:
 
 ---
 
-## Goals and Future Vision  <a name="goals-and-future-vision"></a>
+## Goals and Future Vision  
 
 * **Expand Hash Algorithms:** Integrate Keccak-256, BLAKE2b, and experimental permutations.
 * **GPU Acceleration:** Add OpenCL/CUDA support for bulk throughput spikes.
@@ -414,7 +422,7 @@ This roadmap targets a comprehensive research platform for iterative cryptograph
 
 ---
 
-## Summary  <a name="summary"></a>
+## Summary  
 
 SHAV3 is a powerful infinite hash-based Bitcoin key/address generator that offers multiple formats, resilience, and logging. It is superior for exploring derived keyspaces and recursive entropy scenarios, making it ideal for advanced analysis, recovery, and research.
 
